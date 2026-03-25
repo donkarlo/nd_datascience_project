@@ -3,8 +3,8 @@ import tensorflow as tf
 
 from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.architecture.architecture import \
     Architecture as GaussianArchitecture
-from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kind.uncertainty.gaussian.training.config import Config as TrainingConfig
-from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kind.uncertainty.gaussian.training.learned_parameter.learned_parameter import \
+from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kinds.uncertainty.gaussian.training.config import Config as TrainingConfig
+from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kinds.uncertainty.gaussian.training.learned_parameter.learned_parameter import \
     LearnedParameter
 from nd_math.probability.statistic.population.sampling.kind.countable.finite.members_mentioned.numbered.sequence.sliding_window.sliding_window import \
     SlidingWindow

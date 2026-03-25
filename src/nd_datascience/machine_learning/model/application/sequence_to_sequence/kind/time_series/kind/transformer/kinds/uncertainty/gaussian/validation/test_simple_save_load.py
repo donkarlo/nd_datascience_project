@@ -3,15 +3,15 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kind.uncertainty.gaussian.architecture.architecture import \
+from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kinds.uncertainty.gaussian.architecture.architecture import \
     Architecture
-from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kind.uncertainty.gaussian.predicting.predicting import \
+from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kinds.uncertainty.gaussian.predicting.predicting import \
     Predicting
-from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kind.uncertainty.gaussian.training.config import \
+from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kinds.uncertainty.gaussian.training.config import \
     Config
-from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kind.uncertainty.gaussian.architecture.storage import Storage as ArchitectureYamlRepository
-from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kind.uncertainty.gaussian.training.storaged import Storaged as ConfigYamlRepository
-from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kind.uncertainty.gaussian.training.learned_parameter.storage import Storage as LearnedParameterNpzRepository
+from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kinds.uncertainty.gaussian.architecture.storage import Storage as ArchitectureYamlRepository
+from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kinds.uncertainty.gaussian.training.storaged import Storaged as ConfigYamlRepository
+from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kinds.uncertainty.gaussian.training.learned_parameter.storage import Storage as LearnedParameterNpzRepository
 
 from nd_math.probability.statistic.population.sampling.kind.countable.finite.members_mentioned.numbered.sequence.sliding_window.sliding_window import \
     SlidingWindow

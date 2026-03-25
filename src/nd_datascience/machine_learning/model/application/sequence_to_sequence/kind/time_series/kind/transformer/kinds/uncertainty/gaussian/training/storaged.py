@@ -3,7 +3,7 @@ from typing import Dict, Any
 
 import yaml
 
-from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kind.uncertainty.gaussian.training.config import \
+from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kinds.uncertainty.gaussian.training.config import \
     Config
 
 

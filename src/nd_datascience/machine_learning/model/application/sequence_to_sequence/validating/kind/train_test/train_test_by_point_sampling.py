@@ -4,7 +4,7 @@ from nd_datascience.machine_learning.model.application.sequence_to_sequence.pred
 from nd_datascience.machine_learning.model.application.sequence_to_sequence.trainer.trainer import Trainer
 from nd_datascience.machine_learning.model.architecture.architecture import Architecture
 from nd_datascience.machine_learning.model.supervision.kind.supervion_dependent.training.config import Config
-from nd_math.number.kind.real.interval.unit.close_unit_interval_number import CloseUnitIntervalNumber
+from nd_math.number.kind.real.interval.unit.close_unit_interval import CloseUnitInterval
 from nd_math.probability.statistic.population.sampling.kind.countable.finite.members_mentioned.numbered.random.random import \
     Random
 from nd_math.probability.statistic.population.sampling.kind.countable.finite.members_mentioned.numbered.sequence.sliding_window.generator import \
@@ -56,7 +56,7 @@ class TrainTestByPointSampling(Validation):
     @classmethod
     def init_from_partitionaning_ratio(cls, trainer_class:Trainer, architecture:Architecture, trainer_configs:Config, predictor_class: Predicting, population: NumberedPopulation, ratio_value: float)->None:
 
-        ratio_value = Ratio(CloseUnitIntervalNumber(ratio_value), population.get_size())
+        ratio_value = Ratio(CloseUnitInterval(ratio_value), population.get_size())
         random_point_sampler = Random(population, ratio_value)
 
         train_data = random_point_sampler.get_samples()

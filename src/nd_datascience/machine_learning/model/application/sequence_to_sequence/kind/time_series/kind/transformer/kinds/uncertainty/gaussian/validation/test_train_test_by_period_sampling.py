@@ -1,12 +1,12 @@
 import numpy as np
 
-from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kind.uncertainty.gaussian.predicting.predicting import \
+from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kinds.uncertainty.gaussian.predicting.predicting import \
     Predicting
-from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kind.uncertainty.gaussian.training.training import \
+from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kinds.uncertainty.gaussian.training.training import \
     Training
-from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kind.uncertainty.gaussian.validation.train_test_by_periods import \
+from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kinds.uncertainty.gaussian.validation.train_test_by_periods import \
     TrainTestByPeriods
-from nd_math.number.kind.real.interval.unit.close_unit_interval_number import CloseUnitIntervalNumber
+from nd_math.number.kind.real.interval.unit.close_unit_interval import CloseUnitInterval
 from nd_math.probability.statistic.population.kind.countable.finite.member_mentioned.numbered.numbered import \
     Numbered as NumberedPopulation
 from nd_math.probability.statistic.population.sampling.kind.countable.finite.members_mentioned.numbered.random.random import \
@@ -38,7 +38,7 @@ class TestTrainTestByPeriodSampling:
                                                                      self._one_period_members_count).get_full_length_partitions()
 
         partitioned_population = NumberedPopulation(partitioned_position_sequence)
-        random_sampling = Random(partitioned_population, Ratio(CloseUnitIntervalNumber(0.7), len(
+        random_sampling = Random(partitioned_population, Ratio(CloseUnitInterval(0.7), len(
             partitioned_position_sequence)))
         training_sequence = np.vstack(random_sampling.get_samples())
         testing_sequence = np.vstack(random_sampling.get_complements())

@@ -6,7 +6,7 @@ from typing import Dict, Any
 
 import yaml
 
-from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kind.uncertainty.gaussian.architecture.architecture import  Architecture
+from nd_datascience.machine_learning.model.application.sequence_to_sequence.kind.time_series.kind.transformer.kinds.uncertainty.gaussian.architecture.architecture import  Architecture
 
 
 class Storage:
